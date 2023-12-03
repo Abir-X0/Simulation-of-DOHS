@@ -58,27 +58,32 @@ public class OpeningController implements Initializable {
 
     @FXML
     private void CantonmentBoardMemberLink(ActionEvent event) throws IOException {
-            new scene(AnchorPanelOpening,"/Mariam/CantonmentBoardMemberLogin.fxml");
+            new scene(AnchorPanelOpening,"/User2/CantonmentBoardMemberLogin.fxml");
     }
 
     @FXML
     private void MaintenanceOfficerLink(ActionEvent event) throws IOException {
        // new scene(AnchorPanelOpening,"/Maroah/MaintanenceOfficerLogin.fxml");
-        new scene(AnchorPanelOpening,"residentDashbord.fxml");
+        new scene(AnchorPanelOpening,"/User3/MaintanenceOfficerLogin.fxml");
     }
 
     @FXML
     private void guestloginbot(ActionEvent event) throws IOException {
-        new scene(AnchorPanelOpening,"residentDashbord.fxml");
+        new scene(AnchorPanelOpening,"Guest.fxml");
     }
 
     @FXML
     private void Aboutbot(ActionEvent event) throws IOException {
-        new scene(AnchorPanelOpening,"/Opu/ServiceProviderLogin.fxml");
+        new scene(AnchorPanelOpening,"About.fxml");
     }
 
     @FXML
     private void helpDskbot(ActionEvent event) {
+    }
+
+    @FXML
+    private void servieLink(ActionEvent event) throws IOException {
+        new scene(AnchorPanelOpening,"/User4/ServiceProviderLogin.fxml");
     }
     
 }

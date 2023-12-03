@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mariam.CANTmemDashbordController">
+<AnchorPane id="AnchorPane" fx:id="cantmemancor" prefHeight="536.0" prefWidth="791.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User2.CANTmemDashbordController">
    <children>
       <TabPane layoutX="10.0" layoutY="10.0" prefHeight="546.0" prefWidth="791.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <tabs>
@@ -25,10 +25,10 @@
                         </Label>
                         <TextArea fx:id="NewsTxtFld" layoutX="38.0" layoutY="70.0" prefHeight="200.0" prefWidth="715.0" />
                         <TextField fx:id="updateTxtFld" layoutX="38.0" layoutY="306.0" prefHeight="118.0" prefWidth="393.0" promptText="Update news " />
-                        <Button fx:id="AddNewsBott" layoutX="183.0" layoutY="440.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="116.0" text="Add News" />
-                        <Button fx:id="myinfoBott" layoutX="510.0" layoutY="329.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="250.0" text="My Information" />
-                        <Button fx:id="DOHSdetBot" layoutX="510.0" layoutY="375.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="250.0" text="D.O.H.S Details" />
-                        <Button layoutX="586.0" layoutY="440.0" mnemonicParsing="false" prefHeight="10.0" prefWidth="98.0" text="Logout" />
+                        <Button layoutX="183.0" layoutY="440.0" mnemonicParsing="false" onAction="#AddNewsBott" prefHeight="39.0" prefWidth="116.0" text="Add News" />
+                        <Button layoutX="510.0" layoutY="329.0" mnemonicParsing="false" onAction="#myinfoBott" prefHeight="26.0" prefWidth="250.0" text="My Information" />
+                        <Button layoutX="510.0" layoutY="375.0" mnemonicParsing="false" onAction="#DOHSdetBot" prefHeight="26.0" prefWidth="250.0" text="D.O.H.S Details" />
+                        <Button layoutX="586.0" layoutY="440.0" mnemonicParsing="false" onAction="#logout" prefHeight="10.0" prefWidth="98.0" text="Logout" />
                      </children>
                   </AnchorPane>
                </content>

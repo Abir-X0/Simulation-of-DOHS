@@ -58,7 +58,7 @@ public class AboutController implements Initializable {
 
     @FXML
     private void ViewNoticebot(ActionEvent event) {
-        AboutTxtArea.setText(PDFnotice.ppd1);
+
     }
     
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="837.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User2.DOHSdetsController">
+   <children>
+      <TextArea fx:id="dettxtarea" editable="false" layoutX="5.0" layoutY="5.0" prefHeight="391.0" prefWidth="591.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="5.0" />
+   </children>
+</AnchorPane>

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.chart.BarChart?>
-<?import javafx.scene.chart.CategoryAxis?>
-<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
@@ -10,6 +8,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Line?>
@@ -66,7 +65,9 @@
                           </columns>
                         </TableView>
                         <Button layoutX="42.0" layoutY="334.0" mnemonicParsing="false" onAction="#addTable" text="Add Resident" />
-                        <Button layoutX="42.0" layoutY="369.0" mnemonicParsing="false" onAction="#DltTable" text="Remove Resident" />
+                        <TextField fx:id="emailbertxtfld" layoutX="194.0" layoutY="334.0" promptText="Email" />
+                        <TextField fx:id="namebertxtfld" layoutX="371.0" layoutY="334.0" promptText="name" />
+                        <TextField fx:id="numbertxtfld" layoutX="569.0" layoutY="334.0" promptText="number" />
                      </children>
                   </AnchorPane>
               </content>
@@ -75,19 +76,18 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="14.0" layoutY="34.0" prefHeight="26.0" prefWidth="445.0" text="Set Yearly Maintenance Budget For DOHS">
+                        <Label layoutX="14.0" layoutY="14.0" prefHeight="26.0" prefWidth="445.0" text="Set Yearly Maintenance Budget For DOHS">
                            <font>
                               <Font name="Cambria Bold" size="21.0" />
                            </font>
                         </Label>
-                        <BarChart layoutX="240.0" layoutY="73.0" prefHeight="332.0" prefWidth="611.0" title="barChartMaintan">
-                          <xAxis>
-                            <CategoryAxis side="BOTTOM" />
-                          </xAxis>
-                          <yAxis>
-                            <NumberAxis side="LEFT" />
-                          </yAxis>
-                        </BarChart>
+                        <PieChart fx:id="piemaint" layoutX="293.0" layoutY="51.0" prefHeight="343.0" prefWidth="458.0" />
+                        <TextField fx:id="offtxtfld" layoutX="54.0" layoutY="110.0" promptText="DOHS Office" />
+                        <TextField fx:id="hospitaltxtfld" layoutX="54.0" layoutY="147.0" promptText="DOHS Hospital" />
+                        <TextField fx:id="mostxtfld" layoutX="54.0" layoutY="185.0" promptText="DOHS Mosque" />
+                        <TextField fx:id="securtxtfld" layoutX="54.0" layoutY="229.0" promptText="DOHS Security" />
+                        <Button layoutX="103.0" layoutY="311.0" mnemonicParsing="false" onAction="#makechart" text="Apply" />
+                        <TextField fx:id="electritxtfld" layoutX="55.0" layoutY="270.0" promptText="DOHS Electricity" />
                      </children>
                   </AnchorPane>
                </content>
@@ -96,8 +96,8 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TextArea layoutX="44.0" layoutY="61.0" prefHeight="200.0" prefWidth="778.0" />
-                        <Button layoutX="64.0" layoutY="335.0" mnemonicParsing="false" text="logout" />
+                        <TextArea fx:id="policiestxtfld" layoutX="44.0" layoutY="61.0" prefHeight="200.0" prefWidth="778.0" />
+                        <Button layoutX="64.0" layoutY="335.0" mnemonicParsing="false" onAction="#logout" text="logout" />
                      </children>
                   </AnchorPane>
               </content>
