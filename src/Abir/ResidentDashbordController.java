@@ -86,6 +86,7 @@ public class ResidentDashbordController implements Initializable {
         EventsComboBox.getItems().addAll("Community Clean-Up Crusade", "Wellness Wednesday: Fitness Classes","Literary Lounge: Book Club Gathering");
         setStrings.setProj("Residential Area Development Projects Overview\n" +"1. **Infrastructure Enhancement:**\n" +"2. **Green Spaces and Recreational Facilities:**\n" +"3. **Smart Home Integration:**\n");
         ProjectsTxtArea.setText(setStrings.proj);
+        PolicisTXTAREA.setText(setStrings.setProj(""));
     }    
 
     @FXML
