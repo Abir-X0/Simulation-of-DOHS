@@ -59,5 +59,11 @@
             <Font name="Cambria" size="17.0" />
          </font>
       </Label>
+      <Hyperlink layoutX="169.0" layoutY="526.0" />
+      <Hyperlink alignment="CENTER" layoutX="126.0" layoutY="526.0" onAction="#servieLink" prefHeight="23.0" prefWidth="225.0" text="Login as Service Provider">
+         <font>
+            <Font name="Cambria Bold Italic" size="13.0" />
+         </font>
+      </Hyperlink>
     </children>
 </AnchorPane>

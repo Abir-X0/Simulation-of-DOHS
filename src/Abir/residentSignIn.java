@@ -20,6 +20,6 @@ public class residentSignIn {
 
     public residentSignIn() {
     }
-    public static String  Email ="sm.abir818@gmail.com";
+    public static String  Email ="admin";
     public static String pass ="admin";
 }

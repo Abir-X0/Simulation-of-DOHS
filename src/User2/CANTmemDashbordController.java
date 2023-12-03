@@ -2,8 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package Mariam;
+package User2;
 
+import Util.scene;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -42,19 +43,19 @@ public class CANTmemDashbordController implements Initializable {
     @FXML
     private TextField updateTxtFld;
     @FXML
-    private Button AddNewsBott;
-    @FXML
-    private Button myinfoBott;
-    @FXML
-    private Button DOHSdetBot;
-    @FXML
     private Tab workRepTAb;
+    @FXML
+    private AnchorPane cantmemancor;
 
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        NewsTxtFld.setText(resNews.getNews());
+        
+        
         ObservableList<PieChart.Data> pieChartData= FXCollections.observableArrayList(
                     new PieChart.Data("Official Business", 35),
                     new PieChart.Data("Vendor ", 25),
@@ -91,6 +92,46 @@ public class CANTmemDashbordController implements Initializable {
         stage.setTitle("Report of D.O.H.S Landmark this Yearl");
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    private void AddNewsBott(ActionEvent event) {
+        String news;
+        news = updateTxtFld.getText();
+        addnews newss= new addnews();
+        NewsTxtFld.setText(news);
+        
+    }
+
+    @FXML
+    private void myinfoBott(ActionEvent event) throws IOException {
+                Parent root = FXMLLoader.load(getClass().getResource("/Mariam/info.fxml"));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/Styles.css");
+        
+        Stage stage = new Stage();
+        stage.setTitle("Report of D.O.H.S Maintenance This month");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    @FXML
+    private void DOHSdetBot(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/Mariam/DOHSdets.fxml"));
+        Scene scene = new Scene(root);
+        scene.getStylesheets().add("/styles/Styles.css");
+        
+        Stage stage = new Stage();
+        stage.setTitle("Report of D.O.H.S Details");
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+    @FXML
+    private void logout(ActionEvent event) throws IOException {
+        new scene(cantmemancor,"Opening_scene.fxml");
     }
     
 }

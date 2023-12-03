@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Opu.ServiceDashBoardController">
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User4.ServiceDashBoardController">
    <children>
       <TabPane layoutX="14.0" layoutY="14.0" prefHeight="426.0" prefWidth="694.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <tabs>
@@ -109,7 +109,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <PieChart fx:id="piechart" layoutX="52.0" layoutY="-25.0" prefHeight="397.0" prefWidth="584.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="0.0" />
+                        <PieChart fx:id="piechart" layoutX="14.0" prefHeight="397.0" prefWidth="553.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="127.0" AnchorPane.topAnchor="0.0" />
                         <Button layoutX="599.0" layoutY="110.0" mnemonicParsing="false" onAction="#monthJOBSER" prefHeight="25.0" prefWidth="63.0" text="Procced" />
                         <Label alignment="CENTER" layoutX="592.0" layoutY="61.0" prefHeight="43.0" prefWidth="77.0" text="See Monthly Job Chart" textAlignment="CENTER" wrapText="true">
                            <font>

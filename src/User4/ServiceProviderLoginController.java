@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
  */
-package Opu;
+package User4;
 
 import Util.scene;
 import java.io.IOException;
@@ -37,7 +37,10 @@ public class ServiceProviderLoginController implements Initializable {
     }    
 
     @FXML
-    private void SErviceLogin(ActionEvent event) {
+    private void SErviceLogin(ActionEvent event) throws IOException {
+                  if (ServiceEmail.getText().equals(userlog.nam) || (ServicePass.getText().equals(userlog.pss))){
+            new scene(ServiceAnchorPan,"/User4/ServiceDashBoard.fxml");
+        }
     }
 
     @FXML

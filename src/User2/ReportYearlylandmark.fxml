@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mariam.ReportYearlylandmarkController">
+<AnchorPane id="AnchorPane" prefHeight="579.0" prefWidth="942.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User2.ReportYearlylandmarkController">
    <children>
       <Label layoutX="745.0" layoutY="220.0" text="Select Year to see">
          <font>
