@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="426.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Opu.ServiceDashBoardController">
+   <children>
+      <TabPane layoutX="14.0" layoutY="14.0" prefHeight="426.0" prefWidth="694.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Apply For Job">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="10.0" layoutY="25.0" prefHeight="200.0" prefWidth="654.0">
+                          <columns>
+                            <TableColumn prefWidth="99.0" text="Job ID" />
+                              <TableColumn prefWidth="175.0" text="Job Type" />
+                              <TableColumn prefWidth="379.0" text="Problem stated" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="14.0" layoutY="253.0" text="Name :">
+                           <font>
+                              <Font name="Candara Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="281.0" text="Contanct Number:">
+                           <font>
+                              <Font name="Candara Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="310.0" text="Job ID:">
+                           <font>
+                              <Font name="Candara Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="337.0" text="Field of Work:">
+                           <font>
+                              <Font name="Candara Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="163.0" layoutY="251.0" promptText="SERnametxtfild" />
+                        <TextField layoutX="163.0" layoutY="279.0" promptText="SERnumbertxtfild" />
+                        <TextField layoutX="163.0" layoutY="308.0" promptText="SERjobtxtfild" />
+                        <TextField layoutX="163.0" layoutY="335.0" promptText="SERworkxtfild" />
+                        <Button fx:id="jobbut" layoutX="357.0" layoutY="292.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="127.0" text="Apply For Job" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Help Desk">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label alignment="TOP_LEFT" layoutX="72.0" layoutY="60.0" prefHeight="17.0" prefWidth="112.0" text="Name :">
+                           <font>
+                              <Font name="Cambria Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="72.0" layoutY="91.0" prefHeight="17.0" prefWidth="112.0" text="Email :">
+                           <font>
+                              <Font name="Cambria Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="72.0" layoutY="121.0" prefHeight="23.0" prefWidth="171.0" text="Contact Number:">
+                           <font>
+                              <Font name="Cambria Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="72.0" layoutY="153.0" prefHeight="23.0" prefWidth="159.0" text="Problem with :">
+                           <font>
+                              <Font name="Cambria Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="TOP_LEFT" layoutX="72.0" layoutY="199.0" prefHeight="23.0" prefWidth="260.0" text="Describe you problem">
+                           <font>
+                              <Font name="Cambria Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="SERHELPNAME" layoutX="273.0" layoutY="59.0" />
+                        <TextField fx:id="SERHELPeml" layoutX="273.0" layoutY="90.0" />
+                        <TextField fx:id="SERHELPNum" layoutX="273.0" layoutY="120.0" />
+                        <TextField fx:id="SERHELPpbm" layoutX="273.0" layoutY="152.0" />
+                        <TextField fx:id="SERHELPpbmdes" layoutX="72.0" layoutY="222.0" prefHeight="124.0" prefWidth="528.0" />
+                        <Button layoutX="490.0" layoutY="102.0" mnemonicParsing="false" onAction="#applyissue" prefHeight="25.0" prefWidth="98.0" text="Apply Issue" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Polices Logout">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextArea fx:id="plicieSER" layoutX="24.0" layoutY="34.0" prefHeight="257.0" prefWidth="646.0" />
+                        <Button layoutX="24.0" layoutY="315.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="132.0" text="Logout" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Job chart">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <PieChart fx:id="piechart" layoutX="52.0" layoutY="-25.0" prefHeight="397.0" prefWidth="584.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="110.0" AnchorPane.topAnchor="0.0" />
+                        <Button layoutX="599.0" layoutY="110.0" mnemonicParsing="false" onAction="#monthJOBSER" prefHeight="25.0" prefWidth="63.0" text="Procced" />
+                        <Label alignment="CENTER" layoutX="592.0" layoutY="61.0" prefHeight="43.0" prefWidth="77.0" text="See Monthly Job Chart" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Cambria Bold" size="13.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="599.0" layoutY="218.0" mnemonicParsing="false" onAction="#YERJOBSER" prefHeight="25.0" prefWidth="63.0" text="Procced" />
+                        <Label alignment="CENTER" layoutX="592.0" layoutY="169.0" prefHeight="43.0" prefWidth="77.0" text="See Yearly Job Chart" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="Cambria Bold" size="13.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
